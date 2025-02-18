@@ -39,5 +39,7 @@ Comentei o SpringApplication para rodar manualmente com o SpringApplciationBuild
 
 [imgbuildermetodos]
 
-Existem diversas configurações, remover o banner Mode, configurar contexto da applicação, rodar aplicação apontando para perfils
+Existem diversas configurações, remover o banner Mode, configurar contexto da applicação, rodar aplicação apontando para perfils, configurações com environment, etc.
+
+[imgconfiguraçãototal]
 
