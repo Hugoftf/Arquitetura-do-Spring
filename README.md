@@ -41,5 +41,5 @@ Comentei o SpringApplication para rodar manualmente com o SpringApplciationBuild
 
 Existem diversas configurações, remover o banner Mode, configurar contexto da applicação, rodar aplicação apontando para perfils, configurações com environment, etc.
 
-![imagem local](/imagem_readme/configuracaocompleta.png)
+![imagem local](/imagem_readme/Classe_application/configuracaocompleta.png)
 
