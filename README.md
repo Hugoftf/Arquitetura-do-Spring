@@ -3,7 +3,7 @@
 Entendendo e configurando Arquiterura do Spring, material e exemplos do curso [Spring Boot Expert](https://www.udemy.com/share/102JK83@yMUhp6sNxBDA-kgPLyYSZnnMzDzWczMTFQlAVcNVOYIUKF2rjqSA3324jlIoyGoJvw==/)
 
 - [Classe Application](#Classe-Application)
-- [Configuration e Bean](#@Configuration-e-Bean)
+- [Configuration e Bean](#Configuration-e-Bean)
 
 
 ![imagem local](imagem_readme/springboner.png)
