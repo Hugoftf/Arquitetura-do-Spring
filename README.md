@@ -2,8 +2,9 @@
 
 Entendendo e configurando Arquiterura do Spring, material e exemplos do curso [Spring Boot Expert](https://www.udemy.com/share/102JK83@yMUhp6sNxBDA-kgPLyYSZnnMzDzWczMTFQlAVcNVOYIUKF2rjqSA3324jlIoyGoJvw==/)
 
-[Classe Application](#Classe-Application)
-[Configuration e Bean](#@Configuration-e-Bean)
+- [Classe Application](#Classe-Application)
+- [Configuration e Bean](#@Configuration-e-Bean)
+
 
 ![imagem local](imagem_readme/springboner.png)
 
@@ -53,7 +54,7 @@ A anotação @Configuration no Spring Framework é usada para indicar que uma cl
 
 Quando você anota uma classe com @Configuration, ela funciona de maneira similar a um arquivo de configuração XML no Spring, mas de forma mais moderna e orientada a código Java. Essa anotação é utilizada para registrar beans que podem ser usados em toda a aplicação.
 
-[img@Config]
+![imagem local](imagem_readme/Configuration_Bean/config.png)
 
  #### Bean
 
@@ -61,6 +62,8 @@ Quando você anota uma classe com @Configuration, ela funciona de maneira simila
 
 básicamente uma forma de você criar objetos e passar como injeção de dependencia sem que seja passada por um cronstrutor ou uma instanciação de objeto:
 
-[img@bean]
+![imagem local](imagem_readme/Configuration_Bean/bean.png)
 
 Na prática, na sua classe Controller, quando você definir uma variavel da classe para se realizar a injação de dependência, você utilizar o @Autowired (Quando você usa @Autowired, o Spring cuida de injetar o objeto necessário, sem que você precise criá-lo manualmente. Ela é usada para realizar injeção de dependência.).
+
+![imagem local](imagem_readme/Configuration_Bean/injecao.png)
