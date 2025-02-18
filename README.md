@@ -33,13 +33,13 @@ dentro do mesmo pacote da classe onde a anotação @SpringBootApplication está.
 
 "Ela é uma alternativa ao uso direto do método estático SpringApplication.run() quando você deseja ter um controle maior sobre o processo de inicialização do aplicativo."
 
-[imgspringappbuilder]
+![imagem local](/imagem_readme/Classe_application/classeSpringapplicationbuilder.png)
 
 Comentei o SpringApplication para rodar manualmente com o SpringApplciationBuilder e fazer configuração adicionais:
 
-[imgbuildermetodos]
+![imagem local](/imagem_readme/Classe_application/buildermetodos.png)
 
 Existem diversas configurações, remover o banner Mode, configurar contexto da applicação, rodar aplicação apontando para perfils, configurações com environment, etc.
 
-[imgconfiguraçãototal]
+![imagem local](/imagem_readme/configuracaocompleta.png)
 
