@@ -4,6 +4,7 @@ import com.github.Hugoftf.arquiteturaspring.montadora.Motor;
 import com.github.Hugoftf.arquiteturaspring.montadora.TipoMotor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class MontadoraConfiguration {
@@ -19,6 +20,7 @@ public class MontadoraConfiguration {
         return motor;
     }
 
+    @Primary
     @Bean(name = "motorTurbo")
     public Motor motorTurbo(){
         var motor =  new Motor();
