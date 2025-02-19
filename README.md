@@ -81,4 +81,20 @@ Defenindo mais beans:
 
 Qualifier na prática: 
 
-![imagem local](imagem_readme/Configuration_Bean/qualifier.png) 
+![imagem local](imagem_readme/Configuration_Bean/qualifier.png)
+
+Retorno: 
+
+![imagem local](imagem_readme/Configuration_Bean/postmaneletrico.png)
+
+Você pode denifir um metodo como padrão caso esqueça de definir no seu controller qual é o qualifier, através da anotação @Primary: 
+
+![imagem local](imagem_readme/Configuration_Bean/primary.png) 
+
+Existe outra forma de usar o @Qualifier, através de anotação personalizada. Elas são exemplos de bom uso, e deixão o código mais limpo:
+
+![imagem local](imagem_readme/Configuration_Bean/anotacaoAspirado.png)
+
+"A anotação @Retention no Java é usada para indicar em qual fase do ciclo de vida da anotação ela estará disponível. Quando você aplica @Retention em uma anotação personalizada, você está especificando o nível de visibilidade dessa anotação, ou seja, onde e por quanto tempo ela será acessível". No caso em RunTime: " RetentionPolicy.RUNTIME: A anotação será retida no bytecode e estará acessível em tempo de execução. Isso significa que você pode acessá-la programaticamente durante a execução do programa, geralmente por meio de reflexão. Isso é essencial para anotações usadas em frameworks como o Spring, que podem ler e processar anotações durante a execução."
+
+"A anotação @Target é usada em anotações personalizadas para especificar onde a anotação pode ser aplicada. Ou seja, ela define os alvos possíveis de uma anotação (por exemplo, métodos, classes, campos, parâmetros, etc.). Quando você cria uma anotação personalizada, o @Target ajuda a garantir que a anotação só possa ser usada nos locais apropriados." 
