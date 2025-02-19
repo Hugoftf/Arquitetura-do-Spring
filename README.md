@@ -7,6 +7,7 @@ Entendendo e configurando a Arquiterura do Spring, material e exemplos do curso 
 
 - [Classe Application](#Classe-Application)
 - [Configuration e Bean](#Configuration-e-Bean)
+- [Padrão MVC](#Padrão-MVC)
 
 
 ## Classe Application
@@ -106,3 +107,14 @@ Em uso:
 Retorno: 
 
 ![imagem local](imagem_readme/Configuration_Bean/resultadoanotacao.png)
+
+
+### Padrão MVC
+
+"No Spring Framework, o padrão MVC (Model-View-Controller) é amplamente utilizado para desenvolver aplicações web. O Spring promove uma clara separação de responsabilidades entre diferentes camadas da aplicação, o que facilita o desenvolvimento e a manutenção. As camadas Controller, Service e Repository (ou DAO) são partes essenciais dessa arquitetura." 
+
+"A camada de Controller é responsável por gerenciar as requisições HTTP e orientar a execução do fluxo da aplicação. O Controller recebe as entradas do usuário (geralmente via requisições HTTP), processa essas entradas com base na lógica de controle e, em seguida, retorna a resposta adequada, que pode ser uma View ou algum tipo de dados em formato JSON ou XML." (Geralmente usamos o [Postman](https://www.postman.com/) para realizar esses testes).
+
+"A camada de Service contém a lógica de negócios da aplicação. Ela é responsável por processar dados, executar regras de negócio, interagir com os repositórios (camada de acesso a dados), e fornecer a funcionalidade necessária para o Controller. O Service atua como uma abstração entre o Controller e o Repository."
+
+A camada de Repository é responsável pelo acesso aos dados. Ela fornece os métodos para acessar e manipular os dados persistidos, como fazer consultas ao banco de dados. No Spring, a camada Repository pode ser implementada facilmente utilizando o Spring Data JPA ou outras tecnologias de persistência, como JDBC, MongoDB, etc.
