@@ -2,6 +2,7 @@ package com.github.Hugoftf.arquiteturaspring.montadora.api;
 
 import com.github.Hugoftf.arquiteturaspring.montadora.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -10,6 +11,7 @@ public class TesteFabricaController {
 
 
     @Autowired
+    @Qualifier("motorEletrico")
     private Motor motor;
 
     @PostMapping
