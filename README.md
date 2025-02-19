@@ -66,3 +66,19 @@ básicamente uma forma de você criar objetos e passar como injeção de depende
 Na prática, na sua classe Controller, quando você definir uma variavel da classe para se realizar a injação de dependência, você utilizar o @Autowired (Quando você usa @Autowired, o Spring cuida de injetar o objeto necessário, sem que você precise criá-lo manualmente. Ela é usada para realizar injeção de dependência.).
 
 ![imagem local](imagem_readme/Configuration_Bean/injecao.png)
+
+#### E se tiver mais de um Bean ?
+
+ Você pode definir multiplos beans no seu programa, dependendo da lógica do seu programa não utilizamos uma instancia de objeto da mesma classe, e sim multiplas. Mas como diferenciar uma da outra ? Existe algumas formas, mas primeiro caso você não diferencie, em tempo de execução retornarar um error dizendo que há multiplas beans mais a jvm não sabe qual injetar, nesse caso existe uma anotação chamada @Qualifier, ela é usada para especificar qual beans você quer utilizar, com o parametro determinado pelo nome do metodo.
+
+Defenindo mais beans:
+
+![imagem local](imagem_readme/Configuration_Bean/beanmotoraspirado.png) 
+
+![imagem local](imagem_readme/Configuration_Bean/beanmotorturbo.png) 
+
+![imagem local](imagem_readme/Configuration_Bean/beanMotorEletrico.png) 
+
+Qualifier na prática: 
+
+![imagem local](imagem_readme/Configuration_Bean/qualifier.png) 
