@@ -9,7 +9,7 @@ Entendendo e configurando a Arquiterura do Spring, material e exemplos do curso 
 - [Configuration e Bean](#Configuration-e-Bean)
 - [Padrão MVC](#Padrão-MVC)
 - [Injeção de Dependência](#Injeção-de-Dependência)
-- [Arquivos de configuração externalizada application properties](#Configuraçao-Application-properties)
+- [Arquivos de configuração externalizada application properties](#Configuração-Application-properties)
 
 
 ## Classe Application
