@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: Arquitetura spring
+  jpa:
+    show-sql: true
+
+app:
+  config:
+    variavel: valor da variavel e X

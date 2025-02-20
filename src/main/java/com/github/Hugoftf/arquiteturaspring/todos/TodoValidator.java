@@ -12,8 +12,8 @@ public class TodoValidator {
     }
 
     public void validar(TodoEntity todoEntity){
-        if (existeTodoComEssaDescricao()){
-            throw new IllegalArgumentException("Já existe um todo com essa descricção")
+        if (existeTodoComEssaDescricao(todoEntity.getDescricao())){
+            throw new IllegalArgumentException("Já existe um todo com essa descricção");
         }
     }
 
