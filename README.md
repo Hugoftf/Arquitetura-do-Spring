@@ -9,6 +9,7 @@ Entendendo e configurando a Arquiterura do Spring, material e exemplos do curso 
 - [Configuration e Bean](#Configuration-e-Bean)
 - [Padrão MVC](#Padrão-MVC)
 - [Injeção de Dependência](#Injeção-de-Dependência)
+- [Arquivos de configuração externalizada application properties](#Configuraçao-Application-properties)
 
 
 ## Classe Application
@@ -153,4 +154,31 @@ A segunda injeção é através do metodo set, você pode receber um objeto por 
 a terceira injeção é através do @Autowired na própria variavel, e a forma menos recomendavel, ela não detona obrigátoriedade e também você não consegue fazer nenhuma lógica como no construtor ou via set
 
 ![imagem local](/imagem_readme/injecao_dependencia/tresformasdeinjetar.png)
+
+### Configuração Application properties
+
+
+Em um projeto Spring, a configuração externalizada é uma prática fundamental que permite separar as configurações da aplicação do código-fonte. Isso oferece maior flexibilidade e facilita a manutenção, especialmente em ambientes de produção, onde diferentes configurações podem ser necessárias para diferentes ambientes (desenvolvimento, teste, produção, etc.).
+
+No Spring, a maneira mais comum de lidar com a configuração externalizada é por meio do arquivo application.properties ou application.yml, que são usados para armazenar valores de configuração e parâmetros para a aplicação.
+
+Primeira coisa  que precisamos entender sobre, as configurações no properties são pertinentes a sua dependência no arquivo xml, exemplo, só vai ser possivel e fazer sentido de configurar um Jpa, se no seu projeto, no seu arquivo xml, tiver uma dependencia para jpa.
+
+Você pode encontrar as propriedades de configuração para cada respectivas dependencias no site do [spring docs io](https://docs.spring.io/spring-boot/appendix/application-properties/index.html).
+
+Você consegue também recuperar essas propriedades no seu programa, para aplicar no contexto ou classe que tem anotação de Configuration para personolizar seus beans:
+
+Primeiro eu troquei meu arquivo properties pelo yamal, assim o código fica mais legivel:
+[img yamal]
+
+Depois Foi criado uma classe com a anotação generica @Component para servi como exemplo de recuperação de valor, ela tem uma variavel que armazena o valor com a anotação @Value com as propiedades do yamal ou propities, e um metodo que retornar o valor:
+
+[img classe valuer]
+
+Na classe com a anotação application do spring, utilizamos o application contexto para recuperar esse valor e chamar o metodo da classe: 
+
+[img context]
+
+
+
 
