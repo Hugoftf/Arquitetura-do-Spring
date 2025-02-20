@@ -1,5 +1,6 @@
 package com.github.Hugoftf.arquiteturaspring.todos;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
@@ -8,10 +9,17 @@ import org.springframework.web.server.ResponseStatusException;
 @RequestMapping("/todo")
 public class TodoController {
 
+    @Autowired
     private TodoService todoService;
 
+    @Autowired
     public TodoController(TodoService todoService) {
         this.todoService = todoService;
+    }
+
+    @Autowired
+    public void setTodoService(TodoService todoService){
+        this.todoService =  todoService;
     }
 
     @PostMapping
