@@ -8,6 +8,7 @@ Entendendo e configurando a Arquiterura do Spring, material e exemplos do curso 
 - [Classe Application](#Classe-Application)
 - [Configuration e Bean](#Configuration-e-Bean)
 - [Padrão MVC](#Padrão-MVC)
+- [Injeção de Dependência](#Injeção-de-Denpendência)
 
 
 ## Classe Application
@@ -118,3 +119,19 @@ Retorno:
 "A camada de Service contém a lógica de negócios da aplicação. Ela é responsável por processar dados, executar regras de negócio, interagir com os repositórios (camada de acesso a dados), e fornecer a funcionalidade necessária para o Controller. O Service atua como uma abstração entre o Controller e o Repository."
 
 A camada de Repository é responsável pelo acesso aos dados. Ela fornece os métodos para acessar e manipular os dados persistidos, como fazer consultas ao banco de dados. No Spring, a camada Repository pode ser implementada facilmente utilizando o Spring Data JPA ou outras tecnologias de persistência, como JDBC, MongoDB, etc.
+
+#### @Component
+
+"É um dos principais conceitos para trabalhar com a Injeção de Dependência (DI) e a Inversão de Controle (IoC). Ele refere-se a um objeto que é gerido pelo Spring Container, ou seja, é um bean que pode ser criado, configurado e mantido pelo Spring. 
+
+Quando uma classe é anotada com uma dessas anotações (@Component, @Service, @Repository, @Controller), o Spring automaticamente registra essa classe como um bean no ApplicationContext do Spring. Esses beans podem ser injetados em outras partes da aplicação utilizando a injeção de dependência.
+
+Ele é pai de outras anotações, então é uma anotação genérica, embora possa ser usados no lugar de @Service (Na lógica da aplicação), @Repository (No acesso a dados da aplicação), @Controller (Na parte web da aplicação), não se é recomendado por questões semânticas e clareza de código.
+
+#### Quando usar um component ?
+
+Você pode usar o component quando há alguma classe que tem alguma logica ou funcionamento separados do padrão (Quando você tiver componentes mais genéricos e que não se encaixem em categorias específicas como @Service, @Repository ou @Controller.), Dessa forma essa classe será gerenciado pelo spring sendo usada como ferramenta para injeção de dependência.
+
+### Injeção de Depenência
+
+
