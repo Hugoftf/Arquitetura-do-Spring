@@ -134,4 +134,23 @@ Você pode usar o component quando há alguma classe que tem alguma logica ou fu
 
 ### Injeção de Dependência
 
+No Spring a injeção de dependência é um padrão de design que visa desacoplar as classes da aplicação, permitindo que elas não precisem criar ou gerenciar suas próprias dependências (ou seja, objetos de que precisam para funcionar). Em vez disso, essas dependências são "injeçadas" (fornecidas) pelo Spring Framework.
+
+Ao invés de instanciar diretamente objetos dentro de uma classe, o Spring se encarrega de criar e injetar as dependências para você.
+
+Vamos a um exemplo em que você precisaria fazer as instancias e também injeta-lás de maneira manual:
+
+![imagem local](/imagem_readme/injecao_dependencia/injecaodedependenciamanual.png)
+
+O spring consegue gerenciar melhor que nós a parte de injeção de dependência.
+
+#### Três formas de fazer a injeção
+
+A primeira injeção é através de construtor, onde o @Autowired não é obrigatório, e também é a forma mais recomendada de ser feito, pois ela diz ao spring que para instanciar tal classe dependende da outra classe, e também por questão de semantica.
+
+A segunda injeção é através do metodo set, você pode receber um objeto por via set, dessa forma você pode implementar alguma lógica no sistema, seja no proprio metodo, ou em outros campos da classe. É obrigatório imformar o @Autowired.
+
+a terceira injeção é através do @Autowired na própria variavel, e a forma menos recomendavel, ela não detona obrigátoriedade e também você não consegue fazer nenhuma lógica como no construtor ou via set
+
+![imagem local](/imagem_readme/injecao_dependencia/tresformasdeinjetar.png)
 
