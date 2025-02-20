@@ -132,6 +132,6 @@ Ele é pai de outras anotações, então é uma anotação genérica, embora pos
 
 Você pode usar o component quando há alguma classe que tem alguma logica ou funcionamento separados do padrão (Quando você tiver componentes mais genéricos e que não se encaixem em categorias específicas como @Service, @Repository ou @Controller.), Dessa forma essa classe será gerenciado pelo spring sendo usada como ferramenta para injeção de dependência.
 
-### Injeção de Depenência
+### Injeção de Dependência
 
 
