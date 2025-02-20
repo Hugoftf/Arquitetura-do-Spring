@@ -169,19 +169,19 @@ Você pode encontrar as propriedades de configuração para cada respectivas dep
 Você consegue também recuperar essas propriedades no seu programa, para aplicar no contexto ou classe que tem anotação de Configuration para personolizar seus beans:
 
 Primeiro eu troquei meu arquivo properties pelo yamal, assim o código fica mais legivel:
-![imagem local](/imagem_readme//imagem_readme/appPropeties_configuration/yamal.png)
+![imagem local](/imagem_readme/appPropeties_configuration/yamal.png)
 
 Depois Foi criado uma classe com a anotação generica @Component para servi como exemplo de recuperação de valor, ela tem uma variavel que armazena o valor com a anotação @Value com as propiedades do yamal ou propities, e um metodo que retornar o valor:
 
-![imagem local](/imagem_readme//imagem_readme/appPropeties_configuration/classevalue.png)
+![imagem local](/imagem_readme/appPropeties_configuration/classevalue.png)
 
 Na classe com a anotação application do spring, utilizamos o application contexto para recuperar esse valor e chamar o metodo da classe: 
 
-![imagem local](/imagem_readme//imagem_readme/appPropeties_configuration/context.png)
+![imagem local](/imagem_readme/appPropeties_configuration/context.png)
 
 Retorno no console da ide: 
 
-![imagem local](/imagem_readme//imagem_readme/appPropeties_configuration/consoledospring.png)
+![imagem local](/imagem_readme/appPropeties_configuration/consoledospring.png)
 
 
 
